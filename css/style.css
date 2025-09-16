@@ -148,7 +148,6 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   padding: 20px 10px;
-  overflow: visible;
   scrollbar-width: none;
 }
 
@@ -157,10 +156,10 @@ body {
   flex-wrap: nowrap;
   overflow-x: auto;
   gap: 20px;
-  padding-bottom: 10px;
+  padding: 14px 0 10px 0;
   scrollbar-width: thin;
   width: 100%;
-  box-sizing: border-box;
+  overflow-y: visible;
 }
 
 .section-productos > h2 {
@@ -294,6 +293,11 @@ footer {
 
 .datos-footer span {
   font-size: 0.9rem;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  margin-top: 5px;
 }
 
 @media (max-width: 900px) {
