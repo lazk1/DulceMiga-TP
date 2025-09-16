@@ -1,0 +1,167 @@
+.servicio-producto {
+  position: relative;
+  background: url("/img/brownie-fondo.jpg") center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.servicio-producto .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.text-service {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.text-service h1 {
+  font-family: var(--font-secondary);
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.text-service p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-action {
+  background-color: #e8c39e;
+  padding: 10px 28px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-action:hover {
+  background-color: #d9b37c;
+}
+
+.beneficios {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #fff7f0;
+}
+
+.beneficios .card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.beneficios .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.beneficios h3 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: #7a4b2e;
+}
+
+.beneficios p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #5e4630;
+}
+
+.galeria {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff7f0;
+}
+
+.galeria h2 {
+  margin-bottom: 25px;
+  color: #7a4b2e;
+}
+
+.galeria-scroll {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeria-scroll .card {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.galeria-scroll .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.galeria-scroll .card img:hover {
+  transform: scale(1.05);
+}
+
+.testimonios {
+  background-color: #fff7f0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonios h2 {
+  margin-bottom: 25px;
+}
+
+.testimonial {
+  max-width: 500px;
+  margin: 20px auto;
+  font-style: italic;
+  color: #7a4b2e;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 8px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .galeria-scroll .card {
+    width: 160px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria-scroll .card {
+    width: 140px;
+    height: 105px;
+  }
+}
+
+@media (max-width: 320px) {
+  .galeria-scroll .card {
+    width: 120px;
+    height: 90px;
+  }
+}
